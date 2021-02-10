@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.ImageList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+img{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100px;
+  width: 100px;
+}
