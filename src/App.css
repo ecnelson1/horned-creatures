@@ -46,6 +46,11 @@ body {
   height: 100%;
   width: 100%;
 }
+.page-header{
+  color: chartreuse;
+  background-color: black;
+  width: 100%;
+}
 
 .filterBar select{
  color: chartreuse;
