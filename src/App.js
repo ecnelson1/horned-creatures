@@ -16,12 +16,15 @@ export default class App extends React.Component {
     render(){
       const filteredImages = images.filter((image) => {
       if (image.keyword === this.state.keyword) return true;
-      });
+      if (!this.state.keyword) return true;
+      return false;
+    });
       return (
       <div className="page-body">
           <PageHeader  />
           <form className = "filters">
-                Keyword:
+                <h1 className = "fiterBar">
+                  <p>Keyword:</p></h1>
                     <select
                     value = {this.state.keyword}
                      onChange = {this.handleFilterChange}>
@@ -36,7 +39,7 @@ export default class App extends React.Component {
                         <option value = "lizard">Lizard</option>
                         <option value = "dragon">Dragon</option>
                     </select>
-                    <button type = "submit">Filter</button>
+                    
                 </form>
           <ImageList filteredImages={filteredImages} className = "ImageList"/>
          
