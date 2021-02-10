@@ -44,13 +44,3 @@ export default class App extends React.Component {
         </div>
       )}}
        
-      
-      
-      
-      
-      
-      
-      
-      // {images.filter((image) => image.keyword === this.state.keyword).map(filteredImages => (
-      //       <li key = {images.keyword}>{filteredImages}</li>
-      //     ))}
