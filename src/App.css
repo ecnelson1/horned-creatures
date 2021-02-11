@@ -37,14 +37,14 @@ body {
   width: 100%;
   background-color: blueviolet;
 }
-.filters {
-  display: grid;
-  color: chartreuse;
-  background-color: black;
-}
+
 .page-body{
+  display: grid;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .page-header{
   color: chartreuse;
@@ -59,4 +59,52 @@ body {
 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+ul{
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  
+}
+li{
+  list-style: none;
+  border: black 2px solid;
+  border-radius: 5%;
+}
+li p{
+  border-radius: 20%;
+  text-transform: uppercase;
+  text-align: center;
+  border: black 2px solid;
+  background-color: black;
+  color: chartreuse;
+  font-family: fantasy;
+}
+li img{
+  border-radius: 20%;
+  height: 100%;
+  width: 100%;
+  border: chartreuse 2px solid;
+}
+.dropdown{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.filters select{
+  color: chartreuse;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+
+}
+.greeting{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: fantasy;
 }

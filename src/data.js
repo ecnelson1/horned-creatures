@@ -1,3 +1,5 @@
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
+
 const images = [
     {
       url:
@@ -160,6 +162,7 @@ const images = [
       horns: 100
     }
   ];
-  
+  export const numberOfHorns =[1,2,3,100]
+  export const keywordSearches = ['narwhal', 'rhino', 'unicorn', 'unilego', 'triceratops', 'markhor', 'mouflon', 'addax', 'chameleon', 'lizard', 'dragon']
   export default images;
   

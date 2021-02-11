@@ -14,6 +14,7 @@ export default class ImageList extends React.Component {
                             <img alt={image.description} src={image.url} />
                             <p>{image.title}</p>
                             <p>{image.keyword}</p>
+                            <p>{image.horns}</p>
                         </li>
                         )
                     }
